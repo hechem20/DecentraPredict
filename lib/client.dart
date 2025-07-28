@@ -568,7 +568,7 @@ loaded.add(QuestionData(i, text, choices, votes, price, creator, deadline));
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text("💰 Solde: ${userBalance.getValueInUnit(EtherUnit.ether).toStringAsFixed(4)} ETH"),
+            child: Text("💰 Solde: ${userBalance.getValueInUnit(EtherUnit.ether).toStringAsFixed(4)}GUI "),
           ),
           Expanded(
             child: questions.isEmpty
@@ -590,7 +590,7 @@ loaded.add(QuestionData(i, text, choices, votes, price, creator, deadline));
                               TextField(
                                 controller: voteAmountController,
                                 keyboardType: TextInputType.number,
-                                decoration: const InputDecoration(labelText: "Montant en wei"),
+                                decoration: const InputDecoration(labelText: "Montant en GUI"),
                               ),
                               const SizedBox(height: 8),
                               ...List.generate(q.choices.length, (choiceIndex) {
