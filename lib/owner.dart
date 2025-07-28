@@ -711,7 +711,7 @@ Widget build(BuildContext context) {
         Padding(
           padding: const EdgeInsets.all(12),
           child: Text(
-            "💰 Total Stake des Clients : ${totalStake.getValueInUnit(EtherUnit.ether).toStringAsFixed(4)} ETH",
+            "💰 Total Stake des Clients : ${totalStake.getValueInUnit(EtherUnit.ether).toStringAsFixed(4)} GUI",
             style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
           ),
         ),
@@ -738,7 +738,7 @@ Widget build(BuildContext context) {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("❓ ${q.text}", style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                            Text("💰 Prix : ${q.price} wei"),
+                            Text("💰 Prix : ${q.price} GUI"),
                             Text("🧮 Total réponses : $totalVotes"),
                             const SizedBox(height: 12),
                             buildChart(q),
